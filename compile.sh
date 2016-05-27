@@ -1,6 +1,6 @@
-lilypond-book --output=out --pdf lilybook.lytex
+lilypond-book --output=out --pdf guitarnotes.lytex
 cd out/
-pdflatex lilybook
-mv lilybook.pdf ../lilybook.pdf
+pdflatex guitarnotes
+mv guitarnotes.pdf ../guitarnotes.pdf
 cd ..
 rm -rf out
