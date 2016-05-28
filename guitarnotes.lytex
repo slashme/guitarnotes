@@ -1,9 +1,59 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,landscape,margin=0]{article}
+\usepackage[margin=10mm]{geometry}
 
 \begin{document}
-    \begin{lilypond}
-        \relative c' {
-          c2 g'2 \times 2/3 { f8 e d } c'2 g4
+    \begin[notime]{lilypond}
+    \new Staff <<
+        \new Voice = "first" 
+        \relative {
+          \voiceOne
+          e''1 \bar "|" \noBreak
+          f1 \bar "|" \noBreak
+          fis2 ges \bar "|" \noBreak
+          g1 \bar "|" \noBreak
+          gis2 aes \bar "|" \noBreak
+          a1 \bar "|" \noBreak
+          ais2 bes \bar "|" \noBreak
+          b1 \bar "|" \noBreak
+          c1 \bar "|" \noBreak
+          cis2 des \bar "|" \noBreak
+          d1 \bar "|" \noBreak
+          dis2 ees \bar "|" \noBreak
+          e1 \bar "|" \noBreak
+          f1 \bar "|" \noBreak
+          fis2 ges \bar "|" \noBreak
+          g1 \bar "|" \noBreak
+          gis2 aes \bar "|" \noBreak
+          a1 \bar "|" \noBreak
+          ais2 bes \bar "|" \noBreak
+          b1 \bar "|" \noBreak
         }
+        \new Voice = "second" 
+        \relative {
+          \voiceTwo
+          \override NoteHead.transparent = ##t
+          \override Stem.transparent = ##t
+          e'4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+          eis4 e e2
+        }
+    >>
     \end{lilypond}
 \end{document}
